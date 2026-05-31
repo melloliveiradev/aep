@@ -1,25 +1,25 @@
-package com.citizenrequestsystem.model.report;
+package com.cidapp.aep.model.report;
 
-import com.citizenrequestsystem.model.request.Sector;
+import com.cidapp.aep.model.request.Sector;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Entity
+@Table(name = "tb_authority")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Authority {
 
-    private String id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
     private String name;
+
+    @ManyToOne
+    @JoinColumn(name = "sector_id")
     private Sector sector;
-
-    public Authority(String id, String name, Sector sector) {
-        this.id = id;
-        this.name = name;
-        this.sector = sector;
-    }
-
-    public String getId() { return id; }
-    public void setId(String id) { this.id = id; }
-
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
-
-    public Sector getSector() { return sector; }
-    public void setSector(Sector sector) { this.sector = sector; }
 }
