@@ -1,4 +1,4 @@
-package com.cidapp.aep.model.report;
+package com.cidapp.aep.model.request;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -8,17 +8,21 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "tb_movement")
+@Table(name = "tb_attachment")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Movement {
+public class RequestAttachment {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String description;
+    private String fileName;
 
-    private LocalDateTime date;
+    private String fileType;
+
+    private String fileUrl;
+
+    private LocalDateTime uploadedAt;
 }

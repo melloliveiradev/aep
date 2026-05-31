@@ -52,12 +52,11 @@ public class Request {
     private User user;
 
     @OneToMany
-    private List<Attachment> attachments;
+    private List<RequestAttachment> requestAttachments;
 
     @OneToMany
-    private List<Movement> movements;
+    private List<RequestMovement> requestMovements;
 
-    @ManyToOne
-    @JoinColumn(name = "sector_id")
+    @Enumerated(EnumType.STRING)
     private Sector sector;
 }
