@@ -45,8 +45,8 @@ public class Report {
     private Authority authority;
 
     @OneToMany
-    private List<Attachment> attachments;
+    private List<ReportAttachment> reportAttachments;
 
     @OneToMany
-    private List<Movement> movements;
+    private List<ReportMovement> reportMovements;
 }

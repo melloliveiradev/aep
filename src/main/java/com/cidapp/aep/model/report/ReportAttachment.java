@@ -1,24 +1,22 @@
 package com.cidapp.aep.model.report;
 
-import com.cidapp.aep.model.request.Sector;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "tb_authority")
+@Table(name = "tb_attachment")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Authority {
+public class ReportAttachment {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String name;
+    private String fileName;
 
-    @Enumerated(EnumType.STRING)
-    private Sector sector;
+    private String fileType;
 }

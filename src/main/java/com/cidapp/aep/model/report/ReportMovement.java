@@ -5,18 +5,20 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
+
 @Entity
-@Table(name = "tb_attachment")
+@Table(name = "tb_movement")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Attachment {
+public class ReportMovement {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String fileName;
+    private String description;
 
-    private String fileType;
+    private LocalDateTime date;
 }
