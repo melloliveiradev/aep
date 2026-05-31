@@ -1,4 +1,4 @@
-package com.citizenrequestsystem.model.report;
+package com.cidapp.aep.model.report;
 
 public enum AuthorityType {
     POLICIA_MILITAR,
