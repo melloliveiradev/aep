@@ -1,10 +1,10 @@
-# Citizen Request System
+# CidApp
 
 A web platform for public service requests and civic issue reporting, focused on transparency, traceability, and citizen engagement.
 
 ##  About
 
-Citizen Request System is a Spring Boot application designed to connect citizens and public authorities through a centralized platform for reporting urban problems and requesting public services.
+CidApp is a Spring Boot application designed to connect citizens and public authorities through a centralized platform for reporting urban problems and requesting public services.
 
 The system allows citizens to create service requests and civic reports, track their progress, and monitor actions taken by responsible authorities.
 
