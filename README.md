@@ -73,21 +73,7 @@ src
 ---
 
 ##  Architecture
-
-The project follows a layered architecture:
-
-### Controller Layer
-Responsible for handling HTTP requests and responses.
-
-### Service Layer
-Contains business rules and application logic.
-
-### Repository Layer
-Responsible for database access using Spring Data JPA.
-
-### Model Layer
-Contains entities, enums, and domain objects.
-
+MVC
 ---
 
 ##  Main Entities
@@ -199,19 +185,3 @@ The application will start on:
 
 ```text
 http://localhost:8080
-```
-
----
-
-##  Educational Purpose
-
-This project was developed as an academic project to practice:
-
-- Object-Oriented Programming
-- Java
-- Spring Boot
-- REST APIs
-- Layered Architecture
-- JPA/Hibernate
-- Software Engineering Principles
-
